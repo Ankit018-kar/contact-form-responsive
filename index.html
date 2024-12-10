@@ -10,14 +10,14 @@
     
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            emailjs.init('your emailJS user id'); // Placeholder for User ID
+            emailjs.init('bbizquGkwfJCr4nFE'); // Placeholder for User ID
 
             const form = document.getElementById("contactForm");
 
             form.addEventListener("submit", function (event) {
                 event.preventDefault();  // Prevent form submission
 
-                emailjs.sendForm('your emailJS service id', 'your emailJS template  id', this)  // Placeholders for service and template IDs
+                emailjs.sendForm('service_xyd6nma', 'template_gc8wk83', this)  // Placeholders for service and template IDs
                     .then(() => {
                         alert("Message sent successfully!");
                     }, (error) => {
